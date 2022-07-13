@@ -1,0 +1,22 @@
+@extends('articles.layout')
+@section('content')
+<div class="row mt-5">
+    <div class="col-lg-12 margin-tb">
+        <div class="pull-left">
+            <h2>Pagina articolo:</h2>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+           <h2>{{$article->titolo}}</h2>
+           <p>{{$article->testo}}</p>
+        </div>
+        <div class="pull-right">
+            <a title="Vai alla home page" class="btn btn-primary" href="{{ route('articles.index') }}">Vai alla home page</a>
+        </div>
+    </div>
+</div>
+@endsection
